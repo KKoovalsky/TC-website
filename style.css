@@ -1,0 +1,460 @@
+/*
+Theme Name: West-nest
+Template: west
+*/
+@import url("../west/style.css");
+
+img#company-logo {
+	-moz-box-shadow: 0 0 7px #fff;
+	-webkit-box-shadow: 0 0 7px #fff;
+        box-shadow: 0 0 7px #fff;
+	width: 50%;
+	height: auto;
+}
+
+/* Styl strony jakiejkolwiek (poprawienie domyślnych nastaw pochodzących z WP) */
+article.page {
+	padding 0px;
+	background-color: transparent;
+	margin 0px;
+	border: none;
+}
+
+/* Klasy dla ustawienia bloków strony startowej, gdy szerokość > 768px */
+div.primary-content {
+	position: relative; 
+	display: flex; 
+	justify-content: center;
+}
+
+div.home-left {
+	margin-left: 0px; 
+	margin-right: 3%;
+}
+
+div.home-right {
+	margin-right: 0px;
+	margin-left: 3%;
+}
+
+
+/* Styl dla bloków z obrazkami nad opisami */
+div.profile-logo {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 20px 20px 20px 20px;
+	background-color: transparent;
+	width: 30%;
+	text-align: center;
+}
+
+div.profile-logo img {
+	width: 50%;
+	height: auto;
+	-webkit-transition: border-width 0.15s ease;
+        -moz-transition: border-width 0.15s ease;
+        -o-transition: border-width 0.15s ease;
+        -ms-transition: border-width 0.15s ease;
+        transition: border-width 0.15s ease; 
+}
+
+div.profile-logo img:hover {
+	border-radius: 50%;
+	border: 4px solid gray;
+	cursor: pointer;
+}
+
+/* Styl dla trzech orientacji firmy ("radiokomunikacja", "pomiary pola", "aplikacje office") na stronie głównej */
+div.inner-content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 20px 20px 20px 20px;
+	background-color: white;
+	width: 30%;
+}
+
+div.inner-content img {
+	display: none;
+}
+
+div.inner-content p {
+	font-size: 120%;
+}
+
+/* Linia wewnątrz opisów orientacji */
+hr.inner-content-hr {
+	border-top: 1px solid orange;
+}
+
+/* Nagłówki trzech orientacji firmy na stronie głównej */
+h1.entry-title {
+	font-size: 150%;
+}
+
+/* Przyciski "czytaj więcej" */
+div.read-more {
+	position: absolute;
+	width: auto;
+	font-family: "Roboto",sans-serif;
+	border: 10px solid rgba(170, 170, 170, 0.7);
+	border-radius: 5%;
+	padding: 20px;
+	background-color: rgba(147, 187, 219, 0.2);
+	font-weight: bold;
+	-webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;  
+	margin-left: 10%;
+	color: rgb(175, 175, 175);
+}
+
+div.read-more:hover {
+	border-color: orange;
+	background-color: white;
+	cursor: pointer;
+	color: orange;
+}
+
+/* Tag Historia na stronie głównej */
+div.secondary-content {
+	background-color: gray;
+}
+
+div#secondary {
+	display: block;
+	color: white;		
+}
+
+div.radio-hist {
+	display: flex;
+	align-items: center;
+	margin-top: 25%;
+	line-height: 150%;
+	font-family: 'Roboto', sans-serif;
+}
+
+div.radio-hist-left {
+	float: left;
+}
+
+div.radio-hist-right {
+	float: right;
+}
+
+div.radio-hist-right-img {
+	text-align: right;
+}
+
+div.radio-hist-left-img {
+	text-align: left;
+}
+
+
+div.radio-txt {
+	width: 60%;
+}
+
+
+div.radio-img {
+	width: 40%;
+}
+
+div.radio-img img {
+	width: 50%;
+}
+
+
+div#radio-hist-right img{
+	border: 4px solid #D4D6D6;
+}
+
+/* Nagłówki wpisów na stronie głównej */
+h1.main-entry-header {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+/* Linia wewnątrz wpisów (np. historia) na stronie głównej */
+hr.main-entry-hr {
+	border-top: 1px solid yellow;
+	width: 50%;
+}
+
+/* Style dla bloków poniżej "O nas" */
+div.radio-txt {
+	color: #ffffff;
+	font-family: 'Dosis';
+	font-size: 190%;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 2;
+	text-decoration: none;
+	text-transform: none;
+}
+
+/* Style dla strony "pomiary pola elektromagnetycznego", "Radiokomunikacja", "Kontakt" */
+
+div#dev-sub-site p,
+div#meas-sub-site p,
+div#radio-sub-site p {
+	margin-top: 4%;
+	font-size: 120%;
+}
+
+div#dev-sub-site,
+div#cookie-sub-site,
+div#contact-sub-site,
+div#radio-sub-site,
+div#meas-sub-site {
+	color: rgb(100, 100, 100);
+}
+
+div#radio-sub-site ul,
+div#meas-sub-site ul {
+	list-style-type: disc;
+	color: blue;
+}
+
+div#radio-sub-site ul li,
+div#meas-sub-site ul li {
+	font-size: 120%;
+}
+
+div#radio-sub-site ul li span,
+div#meas-sub-site ul li span {
+	margin-left: 2%;
+	color: rgb(100, 100, 100);
+}
+
+div#dev-sub-site hr,
+div#cookie-sub-site hr,
+div#contact-sub-site hr,
+div#radio-sub-site hr,
+div#meas-sub-site hr {
+	border-top: 1px solid blue;
+	width: 50%;
+}
+
+div.flex-disp {
+	display: flex;
+	align-items: center;
+	margin-top: 4%;
+}
+
+div.flex-left {
+	float: left;
+}
+
+
+div.flex-right {
+	float: right;
+}
+
+div#contact-main {
+	align-items: unset;
+}
+
+span#what-meas:hover,
+span#how-often-meas:hover {
+	cursor: pointer;
+	color: rgb(170, 170, 170);	
+}
+
+/* Style dla podstrony "Co podlega pomiarom" */
+div#what-meas-sub-page {
+	color: rgb(100, 100, 100);
+}
+
+div#what-meas-sub-page h2{
+	margin-bottom: 3%;
+}
+
+div#what-meas-sub-page td.head-cell {
+	border: solid 2px;
+	background-color: #B8CDE3;
+}
+
+div#what-meas-sub-page table td {
+	text-align: center;
+	border: solid 1px #8A8A8A;
+	background-color: white;
+}
+
+div#what-meas-sub-page hr {
+	border-top: 1px solid blue;
+	width: 50%;
+	margin-bottom: 4%;
+}
+
+ul#how-often-ul {
+	list-style-type: disc; 
+	color: blue;
+}
+
+ul#how-often-ul span{
+	color: rgb(100, 100, 100);
+	margin-left: 2%;
+}
+
+ul#es-more-ul {
+	list-style-type: none;
+}
+
+span.bullet-txt {
+	color: blue;
+	font-size: 20px;
+	margin-right: 1%;
+}
+
+span.emphasize {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+@media (min-width: 993px) {
+	div#contact-left {
+		padding-right: 20px;
+		width: 60%;
+	}
+
+	div#contact-right {
+		padding-left: 20px;
+		width: 40%;
+	}
+}
+
+@media (max-width: 992px) {
+
+	img#company-logo {
+		width: 100%;
+	}
+
+	div#logos {
+		display: none;
+	}
+
+	div.primary-content {
+		display: block;
+	}
+
+	div.inner-content {
+		width: 100%;
+		margin: 25% 0px 25% 0px;	
+	}
+
+	div.read-more {
+		margin-left: 60%;
+		margin-top: -3%;
+	}
+
+	div.inner-content img {
+		display: block;
+		position: absolute;
+		width: 20%;
+		height: auto;
+		-webkit-transition: border-width 0.15s ease;
+        	-moz-transition: border-width 0.15s ease;
+        	-o-transition: border-width 0.15s ease;
+        	-ms-transition: border-width 0.15s ease;
+        	transition: border-width 0.15s ease;
+		margin-left: 80%;
+		margin-top: -15%; 
+	}
+	div.inner-content img:hover {
+		border-radius: 50%;
+		border: 3px solid gray;
+		cursor: pointer;
+	}
+
+	div#secondary {
+		display: block;
+	}
+
+	div#radio-hist-left {
+    		float: unset;
+		width: 100%;
+	}
+
+	div#radio-hist-right {
+		display: none;
+	}
+	
+	div#contact-main {
+		display: block;
+	}
+	
+	div#contact-right,
+	div#contact-left {
+		width: 100%;
+		padding: 0px;
+	}
+
+	div#contact-right {
+		float: left;
+		margin-top: 5%;
+	}
+
+}
+
+@media (max-width: 654px) {
+
+	header#masthead {
+		text-align: center;
+	}
+	img#company-logo {
+		width: 25%;
+		margin-top: 15px;
+		align: middle;
+		border: none;
+	}
+}
+
+@media (max-width: 560px) {
+	div.read-more {
+		margin-left: 40%;
+	}
+
+	div.radio-txt {
+		font-size: 150%;
+	}
+
+}
+
+@media (max-width: 560px) and (orientation: portrait) {
+	
+	div.read-more {
+		margin-left: 20%;
+	}
+	
+	div.inner-content {
+		margin: 40% 0px 40% 0px;
+	}
+
+	div.inner-content img {
+		display: block;
+		position: absolute;
+		width: 25%;
+		height: auto;
+		-webkit-transition: border-width 0.15s ease;
+        	-moz-transition: border-width 0.15s ease;
+        	-o-transition: border-width 0.15s ease;
+        	-ms-transition: border-width 0.15s ease;
+        	transition: border-width 0.15s ease;
+		margin-left: 75%;
+		margin-top: -25%; 
+	}
+	div.inner-content img:hover {
+		border-radius: 50%;
+		border: 3px solid gray;
+		cursor: pointer;
+	}
+
+	
+	div.radio-txt {
+		font-size: 80%;
+	}
+
+}
