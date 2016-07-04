@@ -26,11 +26,10 @@
 			<div class="site-branding col-md-3 col-sm-6 col-xs-12">
 				<?php west_branding(); ?>
 			</div><!-- .site-branding -->
-			<div><img id="company-logo" src="http://46.101.124.148/wp-content/uploads/2016/05/Logo-Improved.png"/></div>
+			<div id="tc-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="company-logo" src="http://46.101.124.148/wp-content/uploads/2016/06/Logo-TELE-COM-e1467627570332.png"/></a></div>
 			<nav id="site-navigation" class="main-navigation col-md-8" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
-			<nav class="mobile-nav"></nav>
 		</div>
 	</header><!-- #masthead -->
 
